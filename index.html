@@ -11,6 +11,8 @@
 <body>
   <div id="vue-app">
     <h1>{{ greet('Afternoon') }}</h1>
+    <input type="text" v-bind:value="job" />
+    <span v-html="websiteTag"></span>
     <p>Name: {{ name }}<p>
     <p>Job: {{ job }}</p>
   </div>

@@ -2,7 +2,12 @@ new Vue({
   el: '#vue-app',
   data: {
     name: 'Ozan',
-    job: 'işsiz'
+    job: 'işsiz',
+    website: 'https://github.com/ozansz',
+    websiteTag: `
+    <!-- you can use :href insrtead of v-bind:href -->
+    <a href="https://github.com/ozansz">My Github Profile</a>
+    `
   },
   methods: {
     greet: function(time){
