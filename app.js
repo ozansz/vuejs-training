@@ -1,13 +1,22 @@
 new Vue({
   el: '#vue-app',
   data: {
-    name: 'Ozan',
-    job: 'işsiz'
+    age: 18,
+    x: 0,
+    y: 0
   },
   methods: {
-    greet: function(time){
-      console.log(this);
-      return 'Good ' + time + ', ' + this.name + ' the ' + this.job;
+    add(n){
+      n = n || 1;
+      this.age += n;
+    },
+    sub(n){
+      n = n || 1;
+      this.age -= n;
+    },
+    updateXY(event){
+      this.x = event.offsetX;
+      this.y = event.offsetY;
     }
   }
 });
